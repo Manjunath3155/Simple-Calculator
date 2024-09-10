@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Calculator</title>
+</head>
+<body>
+
+    
+
+    <div class="container">
+
+
+
+  <div class="main">
+    <div class="display">
+     <input type="text" name="display" value="" id="display" readonly>
+     </div>
+     <div class="buttons">
+        <button class="lett" onclick="display.value='' ">AC</button>
+        <button class="lett" onclick="display.value= display.value.toString().slice(0,-1)">DE</button>
+        <button class="lett" onclick="display.value+='.'" value=".">.</button>
+        <button class="lett" style="font-size: 27px;" onclick="display.value+='/'" value="/">/</button>
+ 
+        <button class="num"  onclick="display.value+='7'" value="7">7</button>
+        <button class="num"  onclick="display.value+='8'" value="8">8</button>
+        <button class="num"  onclick="display.value+='9'" value="9">9</button>
+        <button class="lett" onclick="display.value+='*'" value="*">*</button>
+      
+        <button class="num"  onclick="display.value+='4'" value="4">4</button>
+        <button class="num"  onclick="display.value+='5'" value="5">5</button>
+        <button class="num"  onclick="display.value+='6'" value="6">6</button>
+        <button class="lett" onclick="display.value+='-'" value="-">-</button>
+         
+        <button class="num"  onclick="display.value+='1'" value="1">1</button>
+        <button class="num"  onclick="display.value+='2'" value="2">2</button>
+        <button class="num"  onclick="display.value+='3'" value="3">3</button>
+        <button class="lett" onclick="display.value+='+'" value="+">+</button>
+       
+        <button class="num"  onclick="display.value+='00'" value="00">00</button>
+        <button class="num"  onclick="display.value+='0'" value="0" >0</button>
+        <button class="equal" onclick="display.value=calculation(display.value)" value="=">=</button>
+
+ </div>
+</div>
+</div>
+<div class="history-tab">
+    <div class="history" style="color: white;"><i class="fa-solid fa-clock-rotate-left"></i></div>
+    <span>HISTORY:</span>
+    <p></p>
+</div>
+    <script src="https://kit.fontawesome.com/a178502ca6.js" crossorigin="anonymous"></script>
+
+    <script>
+        let history=document.querySelector(".history-tab");
+
+function calculation(v){
+    let para=document.createElement("p");
+    let data=v+" = "+eval(v);
+    para.innerText=data;
+    history.appendChild(para);
+    return eval(v);
+}
+    </script>
+
+    
+</body>
+</html>

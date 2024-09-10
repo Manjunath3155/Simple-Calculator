@@ -1,0 +1,148 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    height: 100vh;
+    background-color: #AECFDF;
+    font-family:monospace;
+}
+
+
+.container{
+    position: relative;
+    background-color: #484D6D;
+    display: flex;
+    height: 565px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.9);
+}
+
+
+
+.container input{
+    position: absolute;
+    display: flex;
+    background-color: transparent;
+    left: 0;
+    right: 0;
+   margin: 0 auto;
+    width: 94%;
+    top: 50px;
+    height: 104px;
+   border: none;
+   outline: 0;
+   box-shadow: -8px -8px 15px rgba(255,255,255,0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+   color: white;
+   box-shadow: -8px -8px 15px rgba(255,255,255,0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+   font-size: 20px;border-radius: 10px;
+}
+  
+.buttons{
+position: absolute;
+   max-width: 90%;
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   gap:20px;
+   top: 175px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+}
+
+.buttons button
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4a4f6c;
+    font-size: 20px;
+    padding: 20px 10px 20px 10px;
+    border-radius: 10px;
+    height: 55px;
+    border: #484D6D;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.buttons button:hover{
+    background-color:rgb(185, 184, 184);
+    cursor: pointer;
+}
+
+.buttons button:active{
+    background-color:grey;
+}
+
+button.equal{
+    background-color: rgb(8, 202, 255);
+    grid-column: 3/5;
+    
+}
+
+.lett{
+    color: rgb(8, 202, 255);
+}
+
+.num{
+    color: white;
+}
+
+
+.display{
+    display: flex;
+    justify-content:flex-end;
+}
+
+.display input{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
+
+.history-tab{
+    position: relative;
+    width: 400px;
+    height: 565px;
+    background-color: #484D6D;
+    color: white;
+    right: 0;
+    border-radius: 10px;
+    margin-left: 20px;
+    overflow-y: auto;
+
+}
+
+.history {
+    font-size: 20px;
+    position: absolute;
+    left: 360px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.history-tab span{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    color: rgb(8, 202, 255);
+    top: 30px;
+}
+
+.history-tab p:last-child{
+    margin: 15px;
+    color: #eee;
+    font-size: 2.2em;
+}
+
+.history-tab p:not(:last-child){
+    margin: 15px;
+    color: black;
+    font-size: 1.7em;
+}
+
+
+
+
+
+
