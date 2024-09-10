@@ -7,7 +7,6 @@ body{
     font-family:monospace;
 }
 
-
 .container{
     position: relative;
     background-color: #484D6D;
@@ -35,19 +34,20 @@ body{
    box-shadow: -8px -8px 15px rgba(255,255,255,0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
    color: white;
    box-shadow: -8px -8px 15px rgba(255,255,255,0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
-   font-size: 20px;border-radius: 10px;
+   font-size: 20px;
+   border-radius: 10px;
 }
   
 .buttons{
 position: absolute;
-   max-width: 90%;
-   display: grid;
-   grid-template-columns: repeat(4,1fr);
-   gap:20px;
-   top: 175px;
-    left: 0px;
-    right: 0px;
-    margin: 0 auto;
+max-width: 90%;
+display: grid;
+grid-template-columns: repeat(4,1fr);
+gap:20px;
+top: 175px;
+left: 0px;
+right: 0px;
+margin: 0 auto;
 }
 
 .buttons button
@@ -110,7 +110,6 @@ button.equal{
     border-radius: 10px;
     margin-left: 20px;
     overflow-y: auto;
-
 }
 
 .history {
