@@ -9,13 +9,9 @@
 </head>
 <body>
 
-    
-
     <div class="container">
 
-
-
-  <div class="main">
+<div class="main">
     <div class="display">
      <input type="text" name="display" value="" id="display" readonly>
      </div>
@@ -59,13 +55,11 @@
 
 function calculation(v){
     let para=document.createElement("p");
-    let data=v+" = "+eval(v);
+    let data=v + " = " + eval(v);
     para.innerText=data;
     history.appendChild(para);
     return eval(v);
 }
     </script>
-
-    
 </body>
 </html>
